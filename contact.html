@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My test page</title>
+    <meta name="author" content="Olivier">
+    <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">  
+	<link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100;400;800&display=swap" rel="stylesheet">  </head>
+  <body>
+    <div class="centering navbar">
+        <a href="index.html">Home</a>
+        <a href="pictures.html">World</a>
+        <a href="storygame.html">Game</a>
+        <a href="contact.html">Kontakt</a>
+      </div>
+
+<div class="centering">
+        <span class="rainbow">Hei Friend</span>
+</div>
+<h3> How are you? </h3>
+<br/>
+
+<!-- JavaScript Bundle with Popper -->
+
+<div class="accordion bg-transparent" id="accordionExample">
+  <div class="accordion-item bg-transparent">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        This is me
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body text-light">
+        <strong>I'm Enya Scheurer.</strong> Nice to meet you!
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item bg-transparent">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button bg-transparent text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        My work
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body text-light">
+        <strong>I make music.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item bg-transparent">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button bg-transparent text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        My vision
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body text-light">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<button type="button" class="btn btn-primary" id="liveToastBtn">Wanna see something fun? Click herer!</button>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="Images/p3.jpg" class="rounded me-2" alt="Images/p3.jpg">
+      <strong class="me-auto">Alert!</strong>
+      <small>right now</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body text-dark">
+      Your computer has been hacked.
+    </div>
+  </div>
+</div>
+
+<script>
+  const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+if (toastTrigger) {
+  toastTrigger.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLiveExample)
+
+    toast.show()
+  })
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
